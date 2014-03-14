@@ -1,0 +1,32 @@
+#detail-tab-wrapper {
+	position:relative;
+}
+.tab-list {
+	margin:0;
+	padding:0;
+}
+.tab-list li {
+	list-style:none;
+	display:inline-block;
+	font-size:11px;
+	padding:10px 15px;
+	background:#333;
+	color:#fff;
+	cursor:pointer;
+}
+.tab-list li.active {
+	background:#999;
+	color:#fff;
+	font-weight:bold;
+}
+.detail-tab {
+	display:none;
+	position:absolute;
+}
+.detail-tab.active {
+	position:static;
+}
+.detail-tab:first-child {
+	display:block;
+	position:static;
+}
