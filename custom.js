@@ -14,6 +14,9 @@
 		var settings = $.extend({}, defaults, options),
 			$this = $(this);
 		
+		// Checking the dom tabs and dom detail boxs have equal count.
+		if($this.length === settings.detailBox.length){
+			
 		// Set default active tab
 		$this.eq(settings.activeTab).addClass(settings.activeClassName)
 		
@@ -43,6 +46,8 @@
 		        .siblings().removeClass(settings.activeClassName).hide();                            // hide other siblings detail box.
 			};
 		});
+		
+		} else { return false}
 	};
 
 }(jQuery, window, document))
