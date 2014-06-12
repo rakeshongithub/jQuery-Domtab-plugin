@@ -11,7 +11,8 @@ events : 'click',  // mouseenter, hover, click
 activeTab : 0,   // tab index you want to make active
 detailBox : $('.detail-tab-wrapper > div'),  // detail box
 activeClassName : 'active', // class name for active tab
-fadeInOut : false // disable the fadein/fadeout effect.
+fadeInOut : false, // disable the fadein/fadeout effect.
+speed : 400
 });
 </pre>
 
