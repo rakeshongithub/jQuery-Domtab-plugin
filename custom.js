@@ -1,5 +1,5 @@
 /*!
- * pixelard-Domtab v1.0.1 (https://github.com/rakeshongithub)
+ * Pixelard-Tabs v1.0.1 (https://github.com/rakeshongithub)
  * Copyright 2013 W3C Dezigns (www.w3cdezigns.com).
  * Licensed under www.w3cdezigns.com.
  */
