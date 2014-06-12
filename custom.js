@@ -1,5 +1,5 @@
 /*!
- * Pixelard-Tabs v1.0.1 (https://github.com/rakeshongithub)
+ * pixelard-Tabs v1.0.1 (https://github.com/rakeshongithub)
  * Copyright 2013 W3C Dezigns (www.w3cdezigns.com).
  * Licensed under www.w3cdezigns.com.
  */
@@ -13,7 +13,8 @@
 			activeClassName : 'active',                 // Class name for active tab
 			activeTab : 2,                              // Default active tab index value
 			events : 'mouseenter',                      // Events Mouseenter, click, hover
-			fadeInOut : true                            // Enable/Desable fadeIn/fadeOut effect by passing true and false.
+			fadeInOut : true,                           // Enable/Desable fadeIn/fadeOut effect by passing true and false.
+			speed : 400
 		};
 		
 	$.fn.domTab = function(options){
@@ -49,8 +50,8 @@
 			
 			// Check if fadeIn/fadeOut effect is on or not
 			if(settings.fadeInOut){
-				settings.detailBox.eq(tabId).addClass(settings.activeClassName).fadeIn()             // fadeIn detail box.
-		        .siblings().removeClass(settings.activeClassName).fadeOut();                         // fadeOut other siblings detail box.
+				settings.detailBox.eq(tabId).addClass(settings.activeClassName).fadeIn(settings.speed)             // fadeIn detail box.
+		        .siblings().removeClass(settings.activeClassName).fadeOut(settings.speed);                         // fadeOut other siblings detail box.
 			} else {
 				settings.detailBox.eq(tabId).addClass(settings.activeClassName).show()               // show detail box.
 		        .siblings().removeClass(settings.activeClassName).hide();                            // hide other siblings detail box.
