@@ -1,3 +1,10 @@
+/*!
+ * pixelard-Domtab v1.0.1 (https://github.com/rakeshongithub)
+ * Copyright 2013 W3C Dezigns (www.w3cdezigns.com).
+ * Licensed under www.w3cdezigns.com.
+ */
+
+
 // Self Invoking function and making alies safe
 (function($, window, document, undefined){
 		  
@@ -30,7 +37,10 @@
 			};
 		});
 		
-
+		// Check if fadeIn/fadeOut effect is on and wrapper all detail boxes with fader-wrapper.
+		if(settings.fadeInOut){
+			settings.detailBox.wrapAll("<div class='fader-wrapper'></div>")
+		}
 		//show/hide detail boxes onclick on tab list
 		$this.on(settings.events, function(){
 			var tabId = $(this).index();
